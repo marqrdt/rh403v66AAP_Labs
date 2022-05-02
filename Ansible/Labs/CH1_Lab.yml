@@ -34,7 +34,7 @@
         username: "{{ sat_un }}"
         password: "{{ sat_pw }}"
         validate_certs: "{{ cert_validate }}"
-      loop: ""{{ org_locations }}
+      loop: "{{ org_locations }}"
 
 ### This has been done for you to obtain the manifest for next task
     - name: Download Manifest from Classroom
